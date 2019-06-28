@@ -1,5 +1,7 @@
 <?php 
 
-	echo "Funcionou mano";
+	echo "Funcionou mano123";
+
+	echo "teste2";
 
 ?>
