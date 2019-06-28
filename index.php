@@ -94,6 +94,7 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
 				<div class="table-responsive row-md-12" id="essa">
 					<table class="table table-responsive table-bordered" style="background-color: white;">
 						<tr class="active">
+							<td>JUAN LINDO D+</td>
 							<td class="col-md-1" style="text-align: center; font-size: 25px;">Nome</td>
 							<td class="col-md-1" style="text-align: center; font-size: 25px;">Senha</td>
 							<td class="col-md-1" style="text-align: center; font-size: 25px;">Telefone</td>
