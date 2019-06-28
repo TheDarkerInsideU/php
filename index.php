@@ -1,5 +1,5 @@
 <?php 
 
-	echo "estudano hard!!";
+	echo "Funcionou mano";
 
 ?>
