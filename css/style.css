@@ -1,0 +1,44 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+a#transformacao{
+	background-color: blue;
+	color: white;
+}
+
+a#transformaca{
+	background-color: blue;
+	color: white;
+}
+
+body{
+	background: #B0E0E6;
+}
+
+header{
+	background: #2c3e50;
+	color: #ffffff;
+}
+
+label{
+	margin-top: 10px;
+}
+
+#fundoForm{
+	background-color: #B0E0E6;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1280px;
+	position: relative;
+	overflow: hidden;
+	min-width: 990px;
+}
+
+td{
+	text-align: center;
+}
