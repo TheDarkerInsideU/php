@@ -1,5 +1,7 @@
 <?php 
 
-	echo "Funcionou mano";
+	echo "hahhaah mano";
+
+	echo "nao funfou irmao";
 
 ?>
