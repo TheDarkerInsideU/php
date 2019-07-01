@@ -106,9 +106,9 @@ if (isset($_POST) && !empty($_POST) && !isset($_POST['stat'])) {
 		<input type="text" maxlength="9" class="form-control cep" id="cep" name="cep" value="<?php echo isset($cliente['cep']) ? $cliente['cep'] : ''; ?>" placeholder="00000.000" =>
 	</div>
 	<div class="form-group col-xs-12 col-md-4">
-		<label for="estado_id">Estado</label>
+		<label id="issoai" for="estado_id"><?php echo isset($cliente['estado_id']) ? '*Seu CEP corresponde a este Estado' : 'Estado'; ?></label>
 		<select name="estado_id" class="form-control uf">
-		<?php 
+		<?php
 		
 		$sql = "SELECT *FROM estados";
 
@@ -116,11 +116,9 @@ if (isset($_POST) && !empty($_POST) && !isset($_POST['stat'])) {
 
 		while($row = mysqli_fetch_array($resultando)) { ?>
 
-		<option value="<?php echo $row['id']; ?>"><?php echo $row['nome']. ' - ' .$row['uf']; ?></option>
+		<option value="<?php echo $row['id'] ;?>"><?php echo $row['nome']. ' - ' .$row['uf']; ?></option>
 
-	<?php 
-
-		} ?>
+	<?php  } ?>
 		</select>
 	</div>
 	<div class="form-group col-xs-12 col-md-4">

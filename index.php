@@ -192,7 +192,7 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
 						<td class="col-md-1" style="text-align: center;"><?php echo $row['cep']; ?></td>
 						<td class="col-md-2" style="text-align: center;">
 							<div class="col-md-12">
-								<button type="button" class="btn btn-warning btn-form col-md-4" test-id='1' style="margin-right: 53px;" data-id="<?php echo $row['id'];?>">
+								<button type="button" class="btn btn-warning btn-form col-md-4 bgmin" test-id='1' style="margin-right: 53px;" cep-id="<?php echo $row['cep']; ?>" data-id="<?php echo $row['id'];?>">
 									<i class="glyphicon glyphicon-pencil"></i>
 								</button>
 								<a href="index.php?id=<?php echo $row['id'];?>" class="btn btn-danger col-md-4" style="" name="delete" type="submit">
