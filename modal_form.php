@@ -116,7 +116,7 @@ if (isset($_POST) && !empty($_POST) && !isset($_POST['stat'])) {
 
 		while($row = mysqli_fetch_array($resultando)) { ?>
 
-		<option class="uf" value="<?php echo $row['id']; ?>"><?php echo $row['uf']; ?></option>
+		<option value="<?php echo $row['id']; ?>"><?php echo $row['nome']. ' - ' .$row['uf']; ?></option>
 
 	<?php 
 

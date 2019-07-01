@@ -94,7 +94,6 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
 				<div class="table-responsive row-md-12" id="essa">
 					<table class="table table-responsive table-bordered" style="background-color: white;">
 						<tr class="active">
-							<td>JUAN LINDO D+</td>
 							<td class="col-md-1" style="text-align: center; font-size: 25px;">Nome</td>
 							<td class="col-md-1" style="text-align: center; font-size: 25px;">Senha</td>
 							<td class="col-md-1" style="text-align: center; font-size: 25px;">Telefone</td>
@@ -105,7 +104,7 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
 							<td class="col-md-1" style="text-align: center; font-size: 25px;">Estado</td>
 							<td class="col-md-1" style="text-align: center; font-size: 25px;">Cidade</td>
 							<td class="col-md-1" style="text-align: center; font-size: 25px;">Cep</td>
-							<td class="col-md-1" style="text-align: center;">
+							<td class="col-md-2" style="text-align: center;">
 							<!-- Aqui usa-se a url de forma a deixar o id nulo, para q nas regras
 								conseguintes ele consiga satisfazer-las a fim de adicionar um usuário-->
 
@@ -194,9 +193,9 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
 								<td class="col-md-1" style="text-align: center;"><?php echo $row['n'] . ' - ' . $row['uf'];?></td>
 								<td class="col-md-1" style="text-align: center;"><?php echo $row['cidade']; ?></td>
 								<td class="col-md-1" style="text-align: center;"><?php echo $row['cep']; ?></td>
-								<td class="" style="text-align: center;">
-									<div class="col-md-15">
-									<button type="button" class="btn btn-warning btn-form col-md-5" test-id='1' style="margin-right: 16.5px;" data-id="<?php echo $row['id'];?>">
+								<td class="col-md-2" style="text-align: center;">
+									<div class="col-md-12">
+									<button type="button" class="btn btn-warning btn-form col-md-5" test-id='1' style="margin-right: 27.5px;" data-id="<?php echo $row['id'];?>">
 										<i class="glyphicon glyphicon-pencil"></i>
 									</button>
 									<a href="index.php?id=<?php echo $row['id'];?>" class="btn btn-danger col-md-5" style="" name="delete" type="submit">
@@ -204,7 +203,7 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
 									</a>
 
 								
-								</div>
+								
 								<?php
 
 								if($row['status'] == 1){ ?>
@@ -220,6 +219,7 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
 								}
 
 								?>
+							</div>
 							</td>								
 							</tr>  
 						<?php } ?>   
